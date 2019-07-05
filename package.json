@@ -12,13 +12,10 @@
     "body-parser": "^1.19.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "fs": "0.0.1-security",
     "iplocation": "^6.1.0",
-    "nodemailer": "^6.2.1",
     "path": "^0.12.7",
     "public-ip": "^3.1.0",
-    "zomato": "^1.1.0",
-    "zomato-api": "^0.1.2"
+    "zomato": "^1.1.0"
   },
   "devDependencies": {
     "dotenv": "^8.0.0"
