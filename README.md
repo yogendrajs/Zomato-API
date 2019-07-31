@@ -46,8 +46,7 @@ node server.js
 Now, open your browser, and type <br>
 http://localhost:{PORT}/{YOUR_ENDPOINT} to get the required details.
 
-**Although, this node-app has been hosted. You can try it by clicking on the following URL:**
-<br>
+**Although, this node-app has been hosted. You can try it by clicking on the following URL:** <br>
 http://zomatoapi.ml
 
 #### Happy Coding:)
