@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Zomato</title>
-	<link rel="icon" type="image/jpg" href="https://bl.thgim.com/migration_catalog/article18123895.ece/alternates/LANDSCAPE_435/zomato2">
-	<link rel="stylesheet" type="text/css" href="/zomato.css">
-</head>
-<body>
-<div class="header">
-	<center><div class="center">
-		<h1>Zomato</h1>
-	</div></center>
-</div>
-<center>
-	<div class="data">
-		<% for (i of data) {%>
 
-			<div class="box">
-				<div class="image">
-					<!-- <img src=<%= i.featured_photo %> ></img> -->
-					<% if (i.featured_photo != '' ){ %>
-						<img src= <%= i.featured_photo %> >	
-					<% } else { %>
-						<img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/happytrioexplains-gmail.com/Tandoori_Paneer_Samosa.jpg" alt= "" ></img>
-					<% } %>
-				</div>
-				<div class="title">
-					<h2> <%= i.name %> </h2>
-					<div>
-						<h3> <%= i.address %> </h3>
-						<hr>
-						<table class="names">
-								<tr>
-									<td class="key">Average Cost For Two :</td>
-									<td> <%= i.average_cost_for_two %> </td>
-								</tr>
-								<tr>
-									<td class="key"> Price Range :</td>
-									<td> <%= i.price_range %> </td>
-								</tr>
-								<tr>
-									<td class="key"> Has Online Delivery :</td>
-									<td> <%= i.has_online_delivery %> </td>
-								</tr>
-								<tr>
-									<td class="key"> Cuisines :</td>
-									<td> <%= i.cuisines %> </td>
-								</tr>
-						</table>
-					</div>
-				</div>
-			</div>
-		<% } %>
-	</div>
-</center>
+<head>
+    <title>Zomato</title>
+    <link rel="icon" type="image/jpg" href="https://bl.thgim.com/migration_catalog/article18123895.ece/alternates/LANDSCAPE_435/zomato2">
+    <link rel="stylesheet" type="text/css" href="/zomato.css">
+</head>
+
+<body>
+    <div class="header">
+        <center>
+            <div class="center">
+                <h1>Zomato</h1>
+            </div>
+        </center>
+    </div>
+    <center>
+        <div class="data">
+            <% for (i of data) {%>
+
+                <div class="box">
+                    <div class="image">
+                        <!-- <img src=<%= i.featured_photo %> ></img> -->
+                        <% if (i.featured_photo != '' ){ %>
+                            <img src= <%=i.featured_photo %> >
+                            <% } else { %>
+                                <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/happytrioexplains-gmail.com/Tandoori_Paneer_Samosa.jpg" alt="image"></img>
+                                <% } %>
+                    </div>
+                    <div class="title">
+                        <h2>
+                            <%= i.name %>
+                        </h2>
+                        <div>
+                            <h3>
+                                <%= i.address %>
+                            </h3>
+                            <hr>
+                            <table class="names">
+                                <tr>
+                                    <td class="key">Average Cost For Two :</td>
+                                    <td>
+                                        <%= i.average_cost_for_two %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="key"> Price Range :</td>
+                                    <td>
+                                        <%= i.price_range %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="key"> Has Online Delivery :</td>
+                                    <td>
+                                        <%= i.has_online_delivery %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="key"> Cuisines :</td>
+                                    <td>
+                                        <%= i.cuisines %>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </center>
 </body>
+
 </html>
