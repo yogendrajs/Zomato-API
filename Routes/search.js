@@ -4,7 +4,7 @@ module.exports = function(search, path, client){
         res.sendFile(path.join(__dirname, '../views/search.htm'));
     })
     
-    search.post('/', (req, res) => {
+    search.post('/search', (req, res) => {
         client.getLocations({
             query: req.body.search, // suggestion for location name
             // lat:"28.613939", //latitude

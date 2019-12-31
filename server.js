@@ -19,7 +19,7 @@ var client = zomato.createClient({
 // for search.js to search for restaurant details in a city
 var search = express.Router();
 require('./Routes/search')(search, path, client);
-app.use('/search', search)
+app.use('/', search)
 
 // for geocode.js to search for location details for your location using your public-ip
 var geocode = express.Router();
